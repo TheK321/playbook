@@ -5,7 +5,7 @@ const profile = {
     type: 'Passenger',
     isInATrip: true,
     getInfo: function () {
-        return `${this.name} is a ${this.type} rated ${this.starRate}⭐ and is ${this.isInATrip ? 'in a trip' : 'not in a trip'}`
+        return `${this.name} is a ${this.type} rated ${this.starRate}⭐ and is currently ${this.isInATrip ? 'in a trip' : 'not in a trip'}`
     }
 }
 
