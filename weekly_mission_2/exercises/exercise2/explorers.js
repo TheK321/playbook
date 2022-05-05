@@ -103,7 +103,7 @@ console.log(hayExercisesFinished)
 console.log("Punto 2.8")
 
 const todosLosExercisesFinished = explorers.every(explorer => {
-    return explorer.missions.frontend.exercisesFinished
+    return explorer.missions.onboarding.exercisesFinished
 }
 )
 console.log(todosLosExercisesFinished)
