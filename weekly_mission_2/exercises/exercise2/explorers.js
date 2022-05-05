@@ -58,3 +58,52 @@ const explorers = [
         }
     }
 ]
+
+
+console.log("Punto 2.1")
+explorers.forEach(explorer =>
+    console.log(explorer.name)
+)
+console.log("Punto 2.2")
+explorers.forEach(explorer => console.log(explorer.stack))
+
+console.log("Punto 2.3")
+const stackMap = explorers.map(explorer =>
+    explorer.stack
+)
+console.log(stackMap)
+
+console.log("Punto 2.4")
+
+const stackFilter = explorers.filter(explorer => {
+    return explorer.stack.includes("js")
+}
+)
+console.log(stackFilter)
+console.log("Punto 2.5")
+const explorerDeCDMX = explorers.find(explorer => {
+    return explorer.city === "CDMX"
+}
+)
+console.log(explorerDeCDMX)
+
+console.log("Punto 2.6")
+
+const sumaCompletados = explorers.reduce((acumulador, explorer) => {
+    return acumulador + explorer.exercises_completed
+}
+    , 0)
+console.log(sumaCompletados)
+console.log("Punto 2.7")
+const hayExercisesFinished = explorers.some(explorer => {
+    return explorer.missions.frontend.exercisesFinished
+})
+console.log(hayExercisesFinished)
+
+console.log("Punto 2.8")
+
+const todosLosExercisesFinished = explorers.every(explorer => {
+    return explorer.missions.frontend.exercisesFinished
+}
+)
+console.log(todosLosExercisesFinished)
